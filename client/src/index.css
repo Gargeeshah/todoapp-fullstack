@@ -1,68 +1,155 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.main {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.left-container {
+  flex: 8;
+  margin-left: 50px; 
+  position: relative;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.right-container {
+  width: 40%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px; 
+}
+
+.form {
+  width: 393px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; 
+  border: none; 
+  box-shadow: none;
+}
+
+.form h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px; 
+  margin-bottom: 50px; 
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.gif {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -10px; 
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -10px; 
+}
+
+
+.quote-box {
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  color: rgb(17, 16, 16);
+  border-radius: 10px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  bottom: -33px; 
+  right: 50px; 
+  text-align: left; 
+  font-style: italic;
+  font-size: 12px;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.TextBox {
+  width: 350px;
+  height: 40px; 
+  margin: 5px 0 50px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 0 12px; 
+  box-sizing: border-box; 
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: darkgreen; 
+  color: white; 
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 16px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  transition: background-color 0.3s ease; 
+  margin-top: 50px; 
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.addtask {
+  width: 350px;
+  height: 40px; 
+  margin: 5px 0 50px;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 0 12px; 
+  box-sizing: border-box; 
+}
+.home-gif {
+  position: absolute; 
+  bottom: 25%;
+  right: 15%; 
+  width: 500px; 
+  display: block;
+  height: auto; 
+  border: None
+
+}
+
+.radio {
+  width: 350px;
+  height: 40px; 
+}
+.radio-button {
+  margin-right: 8px; }
+.radio-space{
+  margin-right: 10px;
+}
+
+button.active {
+  
+  color: red; 
+}
+
+.disabled-button {
+  cursor: not-allowed;
+  opacity: 0.6; 
+  color: gray; 
 }

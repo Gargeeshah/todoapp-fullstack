@@ -1,0 +1,106 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.layer {
+  width: 744px;
+  background-color: #fff !important;
+  border-radius: 0.8rem !important;
+  top: 50px;
+  height: 613px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-y: auto;
+  max-width: 100%;
+  border: none !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(140, 140, 140, 0.2) !important;
+}
+
+.text {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  overflow: hidden;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.close-btn {
+  top: 8px;
+  font-size: 1.6rem;
+  min-height: 3.2rem;
+  line-height: 2rem;
+  position: absolute;
+  z-index: 1;
+  right: 1.2rem;
+  margin: 0;
+}
+
+.edit-header {
+  display: block;
+  padding: 1.6rem 4.8rem 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(140, 140, 140, 0.2);
+}
+
+.header {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+
+.edit-content {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.edit-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top-color: rgba(140, 140, 140, 0.2);
+}
+
+.save-btn {
+  background-color: darkgreen;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: green;
+}
+
+.update-done {
+  width: 552px;
+  background-color: #fff !important;
+  border-radius: 0.8rem !important;
+  top: 50px;
+  height: 381.5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-y: auto;
+  max-width: 100%;
+  border: none !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(140, 140, 140, 0.2) !important;
+  align-items: center; 
+  justify-content: center; 
+}
