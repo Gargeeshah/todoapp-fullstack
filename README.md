@@ -38,7 +38,7 @@ This project is a full-stack Todo application built using React and NestJs. It a
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/nz-m/todo-app.git
+    git clone https://github.com/Gargeeshah/todoapp-fullstack.git
     cd todo-app
     ```
 
