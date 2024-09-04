@@ -44,13 +44,13 @@ This project is a full-stack Todo application built using React and NestJs. It a
 
 2. **Install frontend dependencies**:
     ```bash
-    cd todo-frontend
+    cd client
     npm install
     ```
 
 3. **Install backend dependencies**:
     ```bash
-    cd ../todo-backend
+    cd ../server
     npm install
     ```
 
@@ -58,13 +58,13 @@ This project is a full-stack Todo application built using React and NestJs. It a
 
 1. **Start the backend server**:
     ```bash
-    cd todo-backend
+    cd server
     npm run start:dev
     ```
 
 2. **Start the frontend development server**:
     ```bash
-    cd ../todo-frontend
+    cd ../client
     npm run dev
     ```
 
@@ -108,7 +108,7 @@ Create a `.env` file in the backend directory with the following variables:
 ```
 JWT_SECRET=key
 JWT_EXPIRES_IN=30d
-MONGO_URI=mongodb://127.0.0.1:27017/todo-app
+MONGO_URI=mongodb://127.0.0.1:27017/todoapp
 ```
 
 
